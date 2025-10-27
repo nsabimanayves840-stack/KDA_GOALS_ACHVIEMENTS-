@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nsabimana Yves | Portfolio</title>
+  <style>
+    /* ======= GLOBAL STYLES ======= */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #f5eec2;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #f5eec2;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #e6decf;
+    }
+
+    header {
+      background-color: #1b1b1b;
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+      border-bottom: 1px solid #333;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid #f5eec2;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #f5eec2;
+    }
+
+    header p {
+      color: #d9d2a9;
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 2rem;
+      background-color: #1b1b1b;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    h2 {
+      border-left: 4px solid #f5eec2;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+      color: #f5eec2;
+    }
+
+    p {
+      color: #e6decf;
+    }
+
+    .skills, .projects, .experience {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #111;
+      padding: 1rem;
+      border-radius: 8px;
+      flex: 1 1 260px;
+      box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #f5eec2;
+      margin-bottom: 0.5rem;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #f5eec2;
+      color: #111;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #e6decf;
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1b1b1b;
+      color: #f5eec2;
+      padding: 1.5rem 0;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+    }
+
+    .quote {
+      background-color: #111;
+      border-left: 4px solid #f5eec2;
+      padding: 1rem;
+      font-style: italic;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+
+    .contact-info p {
+      margin: 6px 0;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 1.5rem;
+      }
+      .skills, .projects, .experience {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="african-man-congo-traditional-clothes-toothy-smile-showing-thumbs-heart-loke-sign-indoor-isolated-gray-african-man-179995190.webp" alt="Profile photo">
+    <h1>Nsabimana Yves</h1>
+    <p>Front-End Developer • Designer • Creative Thinker</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Yves Nsabimana</strong>, a front-end developer based in Kigali, Rwanda. I create simple, clean, and modern websites that blend technology and creativity. My passion lies in designing interfaces that are not only functional but also pleasant to use.</p>
+    <p>I enjoy experimenting with colors, typography, and layouts that bring life to digital projects while keeping things elegant and minimal.</p>
+    <a class="button" href="#">Download CV</a>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><h3>HTML & CSS</h3><p>Building visually balanced, structured websites.</p></div>
+      <div class="card"><h3>JavaScript</h3><p>Adding motion, interaction, and dynamic content to web apps.</p></div>
+      <div class="card"><h3>Figma</h3><p>Designing user interfaces that connect form with function.</p></div>
+      <div class="card"><h3>UI/UX Design</h3><p>Creating user-centered designs that are intuitive and simple.</p></div>
+      <div class="card"><h3>Git & GitHub</h3><p>Version control and project collaboration made efficient.</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>School Website Redesign</h3>
+        <p>Developed a fully responsive website for a local school with a focus on simplicity and accessibility.</p>
+      </div>
+      <div class="card">
+        <h3>Coffee Shop Landing Page</h3>
+        <p>A minimal and elegant landing page built with HTML, CSS, and a hint of JavaScript animations.</p>
+      </div>
+      <div class="card">
+        <h3>Personal Blog</h3>
+        <p>A clean and content-focused blog with a dark theme and improved reading experience.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>This very site — a showcase of my skills and personal design aesthetic.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <div class="card">
+        <h3>Freelance Web Developer</h3>
+        <p><strong>2023 - Present</strong></p>
+        <p>Designed and developed small business websites, personal portfolios, and creative landing pages for local clients.</p>
+      </div>
+      <div class="card">
+        <h3>Intern Developer</h3>
+        <p><strong>2022 - 2023</strong></p>
+        <p>Worked on school and community projects, improving web accessibility and UI design quality.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="quote">“Yves’ professionalism and creativity turned our old website into a modern and beautiful platform.” — Client</div>
+    <div class="quote">“He works with great attention to detail and understands exactly what the client needs.” — Project Partner</div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:nsabimanayves@gmail.com">nsabimanayves@gmail.com</a></p>
+      <p><strong>Phone:</strong> 0798811200</p>
+      <p><strong>Location:</strong> Kigali, Rwanda</p>
+      <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/nsabimanayves</a></p>
+      <p><strong>GitHub:</strong> <a href="#">github.com/nsabimanayves</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Nsabimana Yves | Designed with simplicity & passion</p>
+  </footer>
+</body>
+</html>
