@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KDA Student Achievements</title>
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f9f9f9;
+      color: #2b1d75;
+    }
+
+    header {
+      background-color: #54ad00;
+      color: rgb(17, 17, 17);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: rgb(235, 26, 26);
+      font-weight: 500;
+    }
+
+    nav a: hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Hero Section ===== */
+    #hero {
+      background: linear-gradient(rgba(0, 74, 173, 0.8), rgba(0, 74, 173, 0.8)),
+        url('https://via.placeholder.com/1200x400') center/cover;
+      color: rgb(123, 252, 192);
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    #hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    #hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* ===== Section Styles ===== */
+    .content-section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .content-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #005fad;
+    }
+
+    /* ===== Cards & Grids ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card, .profile-card {
+      background: rgb(38, 40, 48);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(8, 214, 180, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card: hover, .profile-card: hover {
+      transform: translateY(-5px);
+    }
+
+    .card img, .profile-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card h3, .profile-card h3 {
+      color: #004aad;
+      margin: 1rem 0 0.5rem;
+    }
+
+    .card p, .profile-card p {
+      padding: 0 1rem 1rem;
+    }
+
+    /* ===== News Section ===== */
+    #news article {
+      background: rgba(65, 196, 53, 0.712);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    #news h3 {
+      color: #004aad;
+      margin-top: 0;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background-color: #004aad;
+      color: rgb(207, 33, 33);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KDA Student Achievements</h1>
+    <nav>
+      <ul>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#profiles">Profiles</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#news">News</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Celebrating Excellence at KDA</h2>
+    <p>Discover our students’ achievements in academics, sports, arts, and leadership.</p>
+  </section>
+
+  <section id="achievements" class="content-section">
+    <h2>Featured Achievements</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="" alt="Achievement 1">
+        <h3>Top Scorer in Mathematics Olympiad</h3>
+        <p> Hafashimana Rene (Grade 10) secured 1st place at the National Level Olympiad.</p>
+      </div>
+      <div class="card">
+        <img src="" alt="Achievement 2">
+        <h3>Art Competition Winner</h3>
+        <p>Ntare RAY'S painting won the City Art Fest 2025 competition.</p>
+      </div>
+      <div class="card">
+        <img src="" alt="Achievement 3">
+        <h3>Sports Champion</h3>
+        <p>Our KDA Football Team claimed the District Championship trophy!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="profiles" class="content-section">
+    <h2>Student Profiles</h2>
+    <div class="grid">
+      <div class="profile-card">
+        <img src="" alt="Student 1">
+        <h3>Dufitimana Kalisa</h3>
+        <p>National Mathematics Olympiad Winner</p>
+      </div>
+      <div class="profile-card">
+        <img src="" alt="Student 2">
+        <h3>Sheja kelsy</h3>
+        <p>City Art Fest Winner</p>
+      </div>
+      <div class="profile-card">
+        <img src="" alt="Student 3">
+        <h3>Igor Sezerano </h3>
+        <p>Captain, KDA Football Team</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="content-section">
+    <h2>Photo & Video Gallery</h2>
+    <div class="grid">
+      <img src="" alt="Gallery Image 1">
+      <img src="" alt="Gallery Image 2">
+      <img src="" alt="Gallery Image 3">
+    </div>
+  </section>
+
+  <section id="news" class="content-section">
+    <h2>Latest News & Updates</h2>
+    <article>
+      <h3>KDA Students Excel in National Science Fair</h3>
+      <p>Our science club represented KDA at the National Fair, bringing home 3 awards!</p>
+    </article>
+    <article>
+      <h3>New Sports Complex Opens</h3>
+      <p>KDA inaugurated its new sports facility to support athletic excellence.</p>
+    </article>
+  </section>
+
+  <footer>
+    <p>© 2025 KDA School | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
